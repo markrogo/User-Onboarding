@@ -14,7 +14,7 @@ const formSchema = yup.object().shape({
 });
 
 
-export default function Form () {
+export default function Form (props) {
     // start with form state
     const [formState, setFormState] = useState ({
         name: "",
@@ -78,8 +78,9 @@ export default function Form () {
 
     // set up submission
     const formSubmit = e => {
-        e.preventDefault ();
+        e.preventDefault();
         console.log("form submitted!");
+        props.addTeamMember(formState);
         axios 
             .post("https://reqres.in/api/users", formState)
             .then(response => console.log(response))
@@ -160,7 +161,7 @@ export default function Form () {
             </label>
             
             </div>
-            <button disabled={buttonDisabled}>Submit</button>
+            <button type="submit" disabled={buttonDisabled}>Submit</button>
         </form>
     )
 
