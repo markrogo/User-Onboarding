@@ -11,7 +11,6 @@ const TeamMembers = props => {
           <h3>{teamMembers.role}</h3>
           <p>{teamMembers.email}</p>
 
-          <p>{teamMembers.info}</p>
         </div>
       ))}
     </div>

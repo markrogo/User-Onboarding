@@ -97,6 +97,7 @@ input:placeholder {
 }
 
 button {
+  align-self: center;
   width: 150px;
   display: inline-block;
   padding: 8px 11px;
@@ -141,4 +142,20 @@ button:disabled {
   width: 15px;
   display: inline-block;
   margin-right: 5px;
+}
+h1 {
+  font-size: 250%;
+}
+
+h2 {
+  font-size: 180%;
+}
+
+h3 {
+  font-size: 150%;
+}
+p {
+  font-size: 125%;
+  padding: 10px;
+  border-bottom: 1px solid black;
 }

@@ -160,8 +160,7 @@ export default function Form (props) {
                     id="terms"
                     value={formState.terms}
                     onChange={inputChange}
-                />
-                Click here to accept Terms and Conditions
+                />Click here to accept Terms and Conditions
                 {errorState.terms.length > 0 ? (
                     <p className="error">{errorState.terms}</p>
                 ) : null}
