@@ -85,6 +85,13 @@ export default function Form (props) {
             .post("https://reqres.in/api/users", formState)
             .then(response => console.log(response))
             .catch(err => console.log(err));
+        setFormState ({
+            name: "",
+            email: "",
+            password: "",
+            role: "",
+            terms: false
+        });
     };
 
     // set up JSX for form

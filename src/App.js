@@ -7,10 +7,10 @@ import TeamMembers from "./TeamMembers";
 
 function App() {
   const [teamMembers, setTeamMembers]=useState([{
-    name: "Mark",
-    email: "mark-rogowsky@lambdastudents.com",
-    role: "Instructor",
-    info: "Here is info"
+    name: "",
+    email: "",
+    role: "",
+    info: ""
   }]);
 
   const addTeamMember = (formData) => {
